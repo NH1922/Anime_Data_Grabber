@@ -33,7 +33,6 @@ def get_anime_data(AnimeID,path):
     file.write("RANK:" +str(response_data['rank'])  +"\n")
     file.write("DURATION:" +str(response_data['duration'])  +"\n")
     file.write("GENRE" +str(response_data['genre'])  +"\n")
-    file.write("MAL ID:" +str(response_data['mal_id'])  +"\n")
     file.write("\n ----- END OF "+response_data['title']+"-----\n\n\n")
 
 if __name__=="__main__":
