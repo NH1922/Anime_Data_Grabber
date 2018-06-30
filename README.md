@@ -4,7 +4,3 @@ Makes use of Jikan, BeautifulSoup4 and old MAL Sitemap.
 
 Tested on Windows 10  with Python 3.5.2
 
-To-Do :
-[]Export Data to spreadsheet
-[]Database integration
-[]GUI
