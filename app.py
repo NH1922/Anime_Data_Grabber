@@ -52,6 +52,7 @@ def get_anime_data(AnimeID,path):
     print(anime_data)
     db.execute('''INSERT INTO ANIMES VALUES(?,?,?,?,?,?,?,?,?)''',tuple(anime_data))
     db.commit()
+    return anime_data
 
 def CreateTables():
     db.execute(''' CREATE TABLE IF NOT EXISTS ANIMES (ID INTEGER PRIMARY KEY,TITLE text,SCORE FLOAT,RATING text,STATUS text,
@@ -71,11 +72,31 @@ if __name__=="__main__":
         layout).Read()
     sg.Text("This is a text",size=(35, 1))
     sg.Popup("The gui returned", values)
+    
     path = values[0]
     CreateTables()
     animes = next(os.walk(path))[1]
+    data = []
     for anime in animes:
         print("Adding ", anime)
         AnimeID = find_animeid(anime)
-        get_anime_data(AnimeID, path)
+        data.append(get_anime_data(AnimeID, path))
+    print(data)
+    header_list = ["MAL ID","TITLE","SCORE","RATING","STATUS","POPULARITY","EPISODES","RANK","DURATION"]
+    sg.SetOptions(element_padding=(0, 0))
+
+    layout = [[sg.Table(values=data,
+                            headings=header_list,
+                            max_col_width=25,
+                            auto_size_columns=True,
+                            display_row_numbers=True,
+                            justification='center',
+                            alternating_row_color='lightblue',
+                            pad=25,
+                            num_rows=min(len(data), 20))]]
+
+
+    window = sg.Window('Table', grab_anywhere=False).Layout(layout)
+    event, values = window.Read()
+
     sg.Popup("SUCCESSFULLY DONE ! AnimeData.txt created in your anime folder")
