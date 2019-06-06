@@ -1,0 +1,168 @@
+MAL ID:1535
+TITLE:Death Note
+SCORE:8.66
+RATINGR - 17+ (violence & profanity)
+STATUS:Finished Airing
+POPULARITY:1
+EPISODES:37
+RANK:54
+DURATION:23 min per ep
+GENRE[{'mal_id': 7, 'type': 'anime', 'url': 'https://myanimelist.net/anime/genre/7/Mystery', 'title': 'Mystery', 'name': 'Mystery'}, {'mal_id': 39, 'type': 'anime', 'url': 'https://myanimelist.net/anime/genre/39/Police', 'title': 'Police', 'name': 'Police'}, {'mal_id': 40, 'type': 'anime', 'url': 'https://myanimelist.net/anime/genre/40/Psychological', 'title': 'Psychological', 'name': 'Psychological'}, {'mal_id': 37, 'type': 'anime', 'url': 'https://myanimelist.net/anime/genre/37/Supernatural', 'title': 'Supernatural', 'name': 'Supernatural'}, {'mal_id': 41, 'type': 'anime', 'url': 'https://myanimelist.net/anime/genre/41/Thriller', 'title': 'Thriller', 'name': 'Thriller'}, {'mal_id': 27, 'type': 'anime', 'url': 'https://myanimelist.net/anime/genre/27/Shounen', 'title': 'Shounen', 'name': 'Shounen'}]
+
+ ----- END OF Death Note-----
+
+
+MAL ID:268
+TITLE:Golden Boy
+SCORE:8.05
+RATINGR+ - Mild Nudity
+STATUS:Finished Airing
+POPULARITY:540
+EPISODES:6
+RANK:500
+DURATION:29 min per ep
+GENRE[{'mal_id': 2, 'type': 'anime', 'url': 'https://myanimelist.net/anime/genre/2/Adventure', 'title': 'Adventure', 'name': 'Adventure'}, {'mal_id': 4, 'type': 'anime', 'url': 'https://myanimelist.net/anime/genre/4/Comedy', 'title': 'Comedy', 'name': 'Comedy'}, {'mal_id': 9, 'type': 'anime', 'url': 'https://myanimelist.net/anime/genre/9/Ecchi', 'title': 'Ecchi', 'name': 'Ecchi'}]
+
+ ----- END OF Golden Boy-----
+
+
+MAL ID:245
+TITLE:Great Teacher Onizuka
+SCORE:8.72
+RATINGR - 17+ (violence & profanity)
+STATUS:Finished Airing
+POPULARITY:161
+EPISODES:43
+RANK:41
+DURATION:25 min per ep
+GENRE[{'mal_id': 4, 'type': 'anime', 'url': 'https://myanimelist.net/anime/genre/4/Comedy', 'title': 'Comedy', 'name': 'Comedy'}, {'mal_id': 8, 'type': 'anime', 'url': 'https://myanimelist.net/anime/genre/8/Drama', 'title': 'Drama', 'name': 'Drama'}, {'mal_id': 23, 'type': 'anime', 'url': 'https://myanimelist.net/anime/genre/23/School', 'title': 'School', 'name': 'School'}, {'mal_id': 27, 'type': 'anime', 'url': 'https://myanimelist.net/anime/genre/27/Shounen', 'title': 'Shounen', 'name': 'Shounen'}, {'mal_id': 36, 'type': 'anime', 'url': 'https://myanimelist.net/anime/genre/36/Slice_of_Life', 'title': 'Slice of Life', 'name': 'Slice of Life'}]
+
+ ----- END OF Great Teacher Onizuka-----
+
+
+MAL ID:136
+TITLE:Hunter x Hunter
+SCORE:8.47
+RATINGPG-13 - Teens 13 or older
+STATUS:Finished Airing
+POPULARITY:318
+EPISODES:62
+RANK:120
+DURATION:23 min per ep
+GENRE[{'mal_id': 1, 'type': 'anime', 'url': 'https://myanimelist.net/anime/genre/1/Action', 'title': 'Action', 'name': 'Action'}, {'mal_id': 2, 'type': 'anime', 'url': 'https://myanimelist.net/anime/genre/2/Adventure', 'title': 'Adventure', 'name': 'Adventure'}, {'mal_id': 31, 'type': 'anime', 'url': 'https://myanimelist.net/anime/genre/31/Super_Power', 'title': 'Super Power', 'name': 'Super Power'}, {'mal_id': 10, 'type': 'anime', 'url': 'https://myanimelist.net/anime/genre/10/Fantasy', 'title': 'Fantasy', 'name': 'Fantasy'}, {'mal_id': 27, 'type': 'anime', 'url': 'https://myanimelist.net/anime/genre/27/Shounen', 'title': 'Shounen', 'name': 'Shounen'}]
+
+ ----- END OF Hunter x Hunter-----
+
+
+MAL ID:30240
+TITLE:Prison School
+SCORE:7.87
+RATINGR+ - Mild Nudity
+STATUS:Finished Airing
+POPULARITY:129
+EPISODES:12
+RANK:775
+DURATION:24 min per ep
+GENRE[{'mal_id': 4, 'type': 'anime', 'url': 'https://myanimelist.net/anime/genre/4/Comedy', 'title': 'Comedy', 'name': 'Comedy'}, {'mal_id': 9, 'type': 'anime', 'url': 'https://myanimelist.net/anime/genre/9/Ecchi', 'title': 'Ecchi', 'name': 'Ecchi'}, {'mal_id': 22, 'type': 'anime', 'url': 'https://myanimelist.net/anime/genre/22/Romance', 'title': 'Romance', 'name': 'Romance'}, {'mal_id': 23, 'type': 'anime', 'url': 'https://myanimelist.net/anime/genre/23/School', 'title': 'School', 'name': 'School'}, {'mal_id': 42, 'type': 'anime', 'url': 'https://myanimelist.net/anime/genre/42/Seinen', 'title': 'Seinen', 'name': 'Seinen'}]
+
+ ----- END OF Prison School-----
+
+
+MAL ID:24
+TITLE:School Rumble
+SCORE:8.01
+RATINGPG-13 - Teens 13 or older
+STATUS:Finished Airing
+POPULARITY:387
+EPISODES:26
+RANK:568
+DURATION:23 min per ep
+GENRE[{'mal_id': 4, 'type': 'anime', 'url': 'https://myanimelist.net/anime/genre/4/Comedy', 'title': 'Comedy', 'name': 'Comedy'}, {'mal_id': 22, 'type': 'anime', 'url': 'https://myanimelist.net/anime/genre/22/Romance', 'title': 'Romance', 'name': 'Romance'}, {'mal_id': 23, 'type': 'anime', 'url': 'https://myanimelist.net/anime/genre/23/School', 'title': 'School', 'name': 'School'}, {'mal_id': 27, 'type': 'anime', 'url': 'https://myanimelist.net/anime/genre/27/Shounen', 'title': 'Shounen', 'name': 'Shounen'}]
+
+ ----- END OF School Rumble-----
+
+
+MAL ID:1535
+TITLE:Death Note
+SCORE:8.66
+RATINGR - 17+ (violence & profanity)
+STATUS:Finished Airing
+POPULARITY:1
+EPISODES:37
+RANK:54
+DURATION:23 min per ep
+GENRE[{'name': 'Mystery', 'title': 'Mystery', 'url': 'https://myanimelist.net/anime/genre/7/Mystery', 'mal_id': 7, 'type': 'anime'}, {'name': 'Police', 'title': 'Police', 'url': 'https://myanimelist.net/anime/genre/39/Police', 'mal_id': 39, 'type': 'anime'}, {'name': 'Psychological', 'title': 'Psychological', 'url': 'https://myanimelist.net/anime/genre/40/Psychological', 'mal_id': 40, 'type': 'anime'}, {'name': 'Supernatural', 'title': 'Supernatural', 'url': 'https://myanimelist.net/anime/genre/37/Supernatural', 'mal_id': 37, 'type': 'anime'}, {'name': 'Thriller', 'title': 'Thriller', 'url': 'https://myanimelist.net/anime/genre/41/Thriller', 'mal_id': 41, 'type': 'anime'}, {'name': 'Shounen', 'title': 'Shounen', 'url': 'https://myanimelist.net/anime/genre/27/Shounen', 'mal_id': 27, 'type': 'anime'}]
+
+ ----- END OF Death Note-----
+
+
+MAL ID:268
+TITLE:Golden Boy
+SCORE:8.05
+RATINGR+ - Mild Nudity
+STATUS:Finished Airing
+POPULARITY:540
+EPISODES:6
+RANK:500
+DURATION:29 min per ep
+GENRE[{'name': 'Adventure', 'title': 'Adventure', 'url': 'https://myanimelist.net/anime/genre/2/Adventure', 'mal_id': 2, 'type': 'anime'}, {'name': 'Comedy', 'title': 'Comedy', 'url': 'https://myanimelist.net/anime/genre/4/Comedy', 'mal_id': 4, 'type': 'anime'}, {'name': 'Ecchi', 'title': 'Ecchi', 'url': 'https://myanimelist.net/anime/genre/9/Ecchi', 'mal_id': 9, 'type': 'anime'}]
+
+ ----- END OF Golden Boy-----
+
+
+MAL ID:245
+TITLE:Great Teacher Onizuka
+SCORE:8.72
+RATINGR - 17+ (violence & profanity)
+STATUS:Finished Airing
+POPULARITY:161
+EPISODES:43
+RANK:41
+DURATION:25 min per ep
+GENRE[{'name': 'Comedy', 'title': 'Comedy', 'url': 'https://myanimelist.net/anime/genre/4/Comedy', 'mal_id': 4, 'type': 'anime'}, {'name': 'Drama', 'title': 'Drama', 'url': 'https://myanimelist.net/anime/genre/8/Drama', 'mal_id': 8, 'type': 'anime'}, {'name': 'School', 'title': 'School', 'url': 'https://myanimelist.net/anime/genre/23/School', 'mal_id': 23, 'type': 'anime'}, {'name': 'Shounen', 'title': 'Shounen', 'url': 'https://myanimelist.net/anime/genre/27/Shounen', 'mal_id': 27, 'type': 'anime'}, {'name': 'Slice of Life', 'title': 'Slice of Life', 'url': 'https://myanimelist.net/anime/genre/36/Slice_of_Life', 'mal_id': 36, 'type': 'anime'}]
+
+ ----- END OF Great Teacher Onizuka-----
+
+
+MAL ID:136
+TITLE:Hunter x Hunter
+SCORE:8.47
+RATINGPG-13 - Teens 13 or older
+STATUS:Finished Airing
+POPULARITY:318
+EPISODES:62
+RANK:120
+DURATION:23 min per ep
+GENRE[{'name': 'Action', 'title': 'Action', 'url': 'https://myanimelist.net/anime/genre/1/Action', 'mal_id': 1, 'type': 'anime'}, {'name': 'Adventure', 'title': 'Adventure', 'url': 'https://myanimelist.net/anime/genre/2/Adventure', 'mal_id': 2, 'type': 'anime'}, {'name': 'Super Power', 'title': 'Super Power', 'url': 'https://myanimelist.net/anime/genre/31/Super_Power', 'mal_id': 31, 'type': 'anime'}, {'name': 'Fantasy', 'title': 'Fantasy', 'url': 'https://myanimelist.net/anime/genre/10/Fantasy', 'mal_id': 10, 'type': 'anime'}, {'name': 'Shounen', 'title': 'Shounen', 'url': 'https://myanimelist.net/anime/genre/27/Shounen', 'mal_id': 27, 'type': 'anime'}]
+
+ ----- END OF Hunter x Hunter-----
+
+
+MAL ID:30240
+TITLE:Prison School
+SCORE:7.87
+RATINGR+ - Mild Nudity
+STATUS:Finished Airing
+POPULARITY:129
+EPISODES:12
+RANK:775
+DURATION:24 min per ep
+GENRE[{'name': 'Comedy', 'title': 'Comedy', 'url': 'https://myanimelist.net/anime/genre/4/Comedy', 'mal_id': 4, 'type': 'anime'}, {'name': 'Ecchi', 'title': 'Ecchi', 'url': 'https://myanimelist.net/anime/genre/9/Ecchi', 'mal_id': 9, 'type': 'anime'}, {'name': 'Romance', 'title': 'Romance', 'url': 'https://myanimelist.net/anime/genre/22/Romance', 'mal_id': 22, 'type': 'anime'}, {'name': 'School', 'title': 'School', 'url': 'https://myanimelist.net/anime/genre/23/School', 'mal_id': 23, 'type': 'anime'}, {'name': 'Seinen', 'title': 'Seinen', 'url': 'https://myanimelist.net/anime/genre/42/Seinen', 'mal_id': 42, 'type': 'anime'}]
+
+ ----- END OF Prison School-----
+
+
+MAL ID:24
+TITLE:School Rumble
+SCORE:8.01
+RATINGPG-13 - Teens 13 or older
+STATUS:Finished Airing
+POPULARITY:387
+EPISODES:26
+RANK:568
+DURATION:23 min per ep
+GENRE[{'name': 'Comedy', 'title': 'Comedy', 'url': 'https://myanimelist.net/anime/genre/4/Comedy', 'mal_id': 4, 'type': 'anime'}, {'name': 'Romance', 'title': 'Romance', 'url': 'https://myanimelist.net/anime/genre/22/Romance', 'mal_id': 22, 'type': 'anime'}, {'name': 'School', 'title': 'School', 'url': 'https://myanimelist.net/anime/genre/23/School', 'mal_id': 23, 'type': 'anime'}, {'name': 'Shounen', 'title': 'Shounen', 'url': 'https://myanimelist.net/anime/genre/27/Shounen', 'mal_id': 27, 'type': 'anime'}]
+
+ ----- END OF School Rumble-----
+
+
