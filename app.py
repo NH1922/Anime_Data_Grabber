@@ -3,21 +3,26 @@ import sqlite3
 import os
 import requests
 import re
-import bs4
 import json
 import urllib.request
 import sqlite3
+from bs4 import BeautifulSoup
 
 
-def find_animeid(AnimeName):
-    AnimeName = AnimeName.replace(" ","_")
-    file = open('data/anime.xml','r',encoding='utf-8')
-    contents  = file.read()
-    soup = bs4.BeautifulSoup(contents,'lxml')
-    #links  = soup.find_all('url')
-    links = soup.find(string = re.compile(AnimeName,re.IGNORECASE))
-    data = links.split("/")
-    return(data[4])
+def prepare_soup():
+    print("Fetching the pre requisites")
+    anime_list_path = "https://myanimelist.net/info.php?search=%25%25%25&go=relationids&divname=relationGen1"
+    anime_page = urllib.request.urlopen(anime_list_path)
+    print("Preparing the soup. This may take a while")
+    soup = BeautifulSoup(anime_page,"lxml")
+    print("All done")
+    return soup
+
+
+def find_animeid(AnimeName,soup):
+    animeid = soup.find("td",text = re.compile("^"+AnimeName+"$",re.I)).find_previous_sibling("td").text
+    return animeid
+
 
 def get_anime_data(AnimeID,path):
     base_url = "https://api.jikan.moe/anime/"
@@ -61,6 +66,7 @@ def CreateTables():
 
 
 if __name__=="__main__":
+    soup = prepare_soup()
     db = sqlite3.connect('data/reports')
     layout = [[sg.Text('Choose the animes folder', size=(35, 1))],
               [sg.Text('Anime Folder', size=(15, 1), auto_size_text=False, justification='right'),
@@ -79,7 +85,7 @@ if __name__=="__main__":
     data = []
     for anime in animes:
         print("Adding ", anime)
-        AnimeID = find_animeid(anime)
+        AnimeID = find_animeid(anime,soup)
         data.append(get_anime_data(AnimeID, path))
     print(data)
     header_list = ["MAL ID","TITLE","SCORE","RATING","STATUS","POPULARITY","EPISODES","RANK","DURATION"]
