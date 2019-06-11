@@ -27,9 +27,11 @@ def find_animeid(AnimeName,soup):
 def get_anime_data(AnimeID,path):
     base_url = "https://api.jikan.moe/anime/"
     request_url = base_url +  str(AnimeID)
-    response = urllib.request.urlopen(request_url).read()
-    response_obj = str(response,'utf-8')
-    response_data = json.loads(response_obj)
+    # response = urllib.request.urlopen(request_url).read()
+    # response_obj = str(response,'utf-8')
+    # response_data = json.loads(response_obj)
+    response = requests.get(request_url)
+    response_data = response.json()
     anime_data = []
     file_destination = path + "\AnimeData.txt"
     file = open(file_destination,"a")
@@ -55,8 +57,12 @@ def get_anime_data(AnimeID,path):
     file.write("\n ----- END OF "+response_data['title']+"-----\n\n\n")
     response_data = list(response_data.values())
     print(anime_data)
-    db.execute('''INSERT INTO ANIMES VALUES(?,?,?,?,?,?,?,?,?)''',tuple(anime_data))
-    db.commit()
+    try:
+        db.execute('''INSERT INTO ANIMES VALUES(?,?,?,?,?,?,?,?,?)''',tuple(anime_data))
+        db.commit()
+    except:
+        print("Entry already exists or db connection failed ")
+    
     return anime_data
 
 def CreateTables():
@@ -77,7 +83,7 @@ if __name__=="__main__":
     event, values = sg.Window('Anime Data Grabber', auto_size_text=True, default_element_size=(40, 1)).Layout(
         layout).Read()
     sg.Text("This is a text",size=(35, 1))
-    sg.Popup("The gui returned", values)
+    sg.Popup("The path selected is :", values)
     
     path = values[0]
     CreateTables()
