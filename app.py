@@ -30,7 +30,7 @@ def get_anime_data(AnimeID,path):
     response = requests.get(request_url)
     response_data = response.json()
     anime_data = []
-    file_destination = path + "\AnimeData.txt"
+    file_destination = os.path.join(path,"AnimeData.txt")
     file = open(file_destination,"a")
     file.write("MAL ID:" +str(response_data['mal_id'])  +"\n")
     anime_data.append(str(response_data['mal_id']))
