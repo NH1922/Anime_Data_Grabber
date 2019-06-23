@@ -27,9 +27,6 @@ def find_animeid(AnimeName,soup):
 def get_anime_data(AnimeID,path):
     base_url = "https://api.jikan.moe/anime/"
     request_url = base_url +  str(AnimeID)
-    # response = urllib.request.urlopen(request_url).read()
-    # response_obj = str(response,'utf-8')
-    # response_data = json.loads(response_obj)
     response = requests.get(request_url)
     response_data = response.json()
     anime_data = []

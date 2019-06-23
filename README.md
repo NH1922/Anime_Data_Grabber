@@ -9,7 +9,7 @@ MAL-FO uses PySimpleGui to provide a simple GUI to browse the folders and displa
 
 1. Python 3.5.2 +
 2. Other requirements in requirements.txt
-(```pip install -r requirements.txt```
+(```pip install -r requirements.txt```)
 
 ## To Do 
  - [x] Database integration
