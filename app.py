@@ -68,6 +68,10 @@ def CreateTables():
 
 if __name__=="__main__":
     soup = prepare_soup()
+    db_directory = 'data'
+    if not os.path.exists(db_directory):
+        os.mkdir(db_directory)
+    
     db = sqlite3.connect('data/reports')
     layout = [[sg.Text('Choose the animes folder', size=(35, 1))],
               [sg.Text('Anime Folder', size=(15, 1), auto_size_text=False, justification='right'),
@@ -77,9 +81,6 @@ if __name__=="__main__":
 
     event, values = sg.Window('Anime Data Grabber', auto_size_text=True, default_element_size=(40, 1)).Layout(
         layout).Read()
-    sg.Text("This is a text",size=(35, 1))
-    sg.Popup("The path selected is :", values)
-    
     path = values[0]
     CreateTables()
     animes = next(os.walk(path))[1]
