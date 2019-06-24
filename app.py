@@ -85,10 +85,11 @@ if __name__=="__main__":
     CreateTables()
     animes = next(os.walk(path))[1]
     data = []
-    for anime in animes:
-        print("Adding ", anime)
-        AnimeID = find_animeid(anime,soup)
+    for i in range(len(animes)):
+        print("Adding ", animes[i])
+        AnimeID = find_animeid(animes[i],soup)
         data.append(get_anime_data(AnimeID, path))
+        sg.OneLineProgressMeter('Adding anime', i+1, len(animes), 'key','Adding '+animes[i],orientation='h')
     print(data)
     header_list = ["MAL ID","TITLE","SCORE","RATING","STATUS","POPULARITY","EPISODES","RANK","DURATION"]
     sg.SetOptions(element_padding=(0, 0))

@@ -22,6 +22,10 @@ MAL-FO uses PySimpleGui to provide a simple GUI to browse the folders and displa
 
 ![AniimeApp3](https://user-images.githubusercontent.com/31303415/59990736-f51fb200-9661-11e9-8bbd-6ef740215fd5.png)
 
+    A progress bar 
+![AnimeApp4](https://user-images.githubusercontent.com/31303415/59995968-8ef15a00-9676-11e9-9bbb-8b08e39ea839.png)
+
+
 
 
 ## To Do 
