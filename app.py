@@ -4,15 +4,13 @@ import os
 import requests
 import re
 import json
-import urllib.request
-import sqlite3
 from bs4 import BeautifulSoup
 
 
 def prepare_soup():
     print("Fetching the pre requisites")
     anime_list_path = "https://myanimelist.net/info.php?search=%25%25%25&go=relationids&divname=relationGen1"
-    anime_page = urllib.request.urlopen(anime_list_path)
+    anime_page = requests.get(anime_list_path).text
     print("Preparing the soup. This may take a while")
     soup = BeautifulSoup(anime_page,"lxml")
     print("All done")
