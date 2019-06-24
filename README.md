@@ -1,4 +1,3 @@
-
 # MAL-FO
 Fetches information about all your anime stored in a folder from [MAL](https://myanimelist.net/) automatically, stores the information in a local DB (sqllite3) and a text file. 
 
@@ -10,6 +9,20 @@ MAL-FO uses PySimpleGui to provide a simple GUI to browse the folders and displa
 1. Python 3.5.2 +
 2. Other requirements in requirements.txt
 (```pip install -r requirements.txt```)
+
+## Screenshots
+
+    Selecting the anime folder
+
+![AnimeApp](https://user-images.githubusercontent.com/31303415/59990738-f51fb200-9661-11e9-8d68-af998ee0df43.png)
+
+    Fetched results 
+
+![AniimeApp2](https://user-images.githubusercontent.com/31303415/59990737-f51fb200-9661-11e9-8150-729338f5d5ad.png)
+
+![AniimeApp3](https://user-images.githubusercontent.com/31303415/59990736-f51fb200-9661-11e9-8bbd-6ef740215fd5.png)
+
+
 
 ## To Do 
  - [x] Database integration
