@@ -23,7 +23,7 @@ def find_animeid(AnimeName,soup):
 
 
 def get_anime_data(AnimeID,path):
-    base_url = "https://api.jikan.moe/anime/"
+    base_url = "https://api.jikan.moe/v3/anime/"
     request_url = base_url +  str(AnimeID)
     response = requests.get(request_url)
     response_data = response.json()
@@ -48,7 +48,6 @@ def get_anime_data(AnimeID,path):
     anime_data.append(str(response_data['rank']))
     file.write("DURATION:" +str(response_data['duration'])  +"\n")
     anime_data.append(str(response_data['duration']))
-    file.write("GENRE" +str(response_data['genre'])  +"\n")
     file.write("\n ----- END OF "+response_data['title']+"-----\n\n\n")
     response_data = list(response_data.values())
     print(anime_data)
@@ -67,45 +66,52 @@ def CreateTables():
 
 
 if __name__=="__main__":
+    sg.PopupNonBlocking("Please wait while MAL-FO loads", title="Loading MAL-FO",
+                        button_type=sg.POPUP_BUTTONS_NO_BUTTONS, no_titlebar=True, auto_close=True,
+                        auto_close_duration=15)
+
     soup = prepare_soup()
     db_directory = 'data'
     if not os.path.exists(db_directory):
         os.mkdir(db_directory)
-    
     db = sqlite3.connect('data/reports')
-    layout = [[sg.Text('Choose the animes folder', size=(35, 1))],
-              [sg.Text('Anime Folder', size=(15, 1), auto_size_text=False, justification='right'),
-               sg.InputText('Source'),
-               sg.FolderBrowse()],
-              [sg.Submit(), sg.Cancel(), sg.Button('Customized', button_color=('white', 'green'))]]
-
-    event, values = sg.Window('Anime Data Grabber', auto_size_text=True, default_element_size=(40, 1)).Layout(
-        layout).Read()
-    path = values[0]
     CreateTables()
-    animes = next(os.walk(path))[1]
-    data = []
-    for i in range(len(animes)):
-        print("Adding ", animes[i])
-        AnimeID = find_animeid(animes[i],soup)
-        data.append(get_anime_data(AnimeID, path))
-        sg.OneLineProgressMeter('Adding anime', i+1, len(animes), 'key','Adding '+animes[i],orientation='h')
-    print(data)
-    header_list = ["MAL ID","TITLE","SCORE","RATING","STATUS","POPULARITY","EPISODES","RANK","DURATION"]
-    sg.SetOptions(element_padding=(0, 0))
+    layout = [[sg.Text("Choose the anime folder")],
+              [sg.InputText('Source'),
+               sg.FolderBrowse()],
+              [sg.Checkbox('Create text file', key="textfile"), sg.Checkbox('Create spreadsheet', key="csv")],
+              [sg.Submit(), sg.Exit()]
+              ]
+    window = sg.Window('Anime Data Grabber', auto_size_text=True, default_element_size=(120, 4), layout=layout)
+    while (True):
+        event, values = window.Read()
+        if event is None or event == 'Exit':
+            break
+        else:
+            path = values[0]
+            animes = next(os.walk(path))[1]
+            data = []
+            for i in range(len(animes)):
+                print("Adding ", animes[i])
+                AnimeID = find_animeid(animes[i],soup)
+                data.append(get_anime_data(AnimeID, path))
+                sg.OneLineProgressMeter('Adding anime', i+1, len(animes), 'key','Adding '+animes[i],orientation='h')
+            print(data)
+        header_list = ["MAL ID","TITLE","SCORE","RATING","STATUS","POPULARITY","EPISODES","RANK","DURATION"]
+        sg.SetOptions(element_padding=(0, 0))
 
-    layout = [[sg.Table(values=data,
-                            headings=header_list,
-                            max_col_width=25,
-                            auto_size_columns=True,
-                            display_row_numbers=True,
-                            justification='center',
-                            alternating_row_color='lightblue',
-                            pad=25,
-                            num_rows=min(len(data), 20))]]
+        layout = [[sg.Table(values=data,
+                                headings=header_list,
+                                max_col_width=25,
+                                auto_size_columns=True,
+                                display_row_numbers=True,
+                                justification='center',
+                                alternating_row_color='lightblue',
+                                pad=25,
+                                num_rows=min(len(data), 20))]]
 
 
-    window = sg.Window('Table', grab_anywhere=False).Layout(layout)
-    event, values = window.Read()
+        table_window = sg.Window('Table', grab_anywhere=False).Layout(layout)
+        event, values = table_window.Read()
 
     sg.Popup("SUCCESSFULLY DONE ! AnimeData.txt created in your anime folder")
